@@ -1,0 +1,28 @@
+body {
+    background: #F9F5E3;
+    margin-left: 100px;
+}
+h1 {
+    color: #C20114;
+}
+
+.h2 {
+    color: #0F8B8D;
+}
+
+.h3 {
+    color: #414066;
+}
+
+.header-link{
+    color: black;
+    background: #BC8DA7;
+}
+
+.internal-link {
+    color: #414066;
+}
+
+.external-link {
+    background: #BC8DA7;
+}
