@@ -1,2 +1,4 @@
-alert('Cześć! Nazywam się Marta Szewczul i witam Cię na mojej stronie!');
-alert('Cześć!');
+const name='Marta Szewczul' 
+console.log(`Cześć! Nazywam się ${name} i witam Cię na mojej stronie!`);
+
+
