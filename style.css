@@ -60,6 +60,15 @@ h1 {
     color: #bc8da7;
     display: block;
 }
+.motto{
+    color: #c20114;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: auto;
+    border: #0f8b8d dotted 2px;
+    border-radius: 6px;
+}
 .footer{
     margin: 20px;
     background: #bc8da7;
