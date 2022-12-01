@@ -5,10 +5,12 @@
   background: #c2a4b4;
   padding: 16px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navigation__link {
   color: #414066;
-  display: inline-block;
   margin-right: 10px;
   padding: 3px;
   border: #414066 solid 1px;
