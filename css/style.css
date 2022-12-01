@@ -1,5 +1,8 @@
 .body {
-  background: #f9f5e3;
+  background: rgb(65,64,102);
+background: linear-gradient(333deg, rgba(65,64,102,1) 0%, rgba(188,141,167,1) 19%, rgba(249,245,227,1) 51%);
+height: 100vh;
+background-size: contain;
 }
 .navigation {
   background: #c2a4b4;
