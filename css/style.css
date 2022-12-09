@@ -1,14 +1,20 @@
 .body {
   background: rgb(65,64,102);
-background: linear-gradient(333deg, rgba(65,64,102,1) 0%, rgba(188,141,167,1) 19%, rgba(249,245,227,1) 51%);
+background: linear-gradient(333deg, rgba(65,64,102,1) 0%, rgba(188,141,167,1) 19%, rgba(249,245,227,1) 51%); 
 height: 100vh;
-background-size: contain;
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position:center;
+}
+.header {
+ 
 }
 .navigation {
   background: #c2a4b4;
   padding: 16px;
   border-radius: 8px;
   display: flex;
+  
   justify-content: center;
   align-items: center;
 }
@@ -26,11 +32,12 @@ h1 {
     color: #c20114;
   }
 .main {
-  width: 1000px;
+  max-width: 1000px;
   padding: 10px;
   margin: auto;
   box-sizing: border-box;
-}
+  display: grid;
+ }
 .section
 .section__header{
     display: block;
