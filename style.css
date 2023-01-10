@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body {
+  background: rgb(65, 64, 102);
+  background: linear-gradient(
+    333deg,
+    rgba(65, 64, 102, 1) 0%,
+    rgba(188, 141, 167, 1) 19%,
+    rgba(249, 245, 227, 1) 51%
+  );
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+}
+.navigation {
+  background: #c2a4b4;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__link {
+  color: #414066;
+  margin-right: 10px;
+  padding: 3px;
+  border: #414066 solid 1px;
+  border-radius: 3px;
+}
+.navigation__link--homepage {
+  color: white;
+}
+h1 {
+  color: #c20114;
+}
+.main {
+  max-width: 1000px;
+  min-height: 100%;
+  padding: 10px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  column-gap: 16px;
+  grid-template-areas:
+    "section__header section__header"
+    "section__picture section__articlePrivate"
+    "section__picture section__articleProfessional";
+}
+.section__header {
+  display: block;
+  color: #0f8b8d;
+  width: fit-content;
+  margin: 20px;
+  padding: 5px;
+  border: #c20114 dotted 2px;
+  border-radius: 5px;
+  grid-area: section__header;
+}
+.div{
+  grid-area: section__picture;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__picture {
+  float: left;
+  max-width: 250px;
+  padding: 2px;
+  border: #c20114 dotted;
+  border-radius: 50%;
+  margin: 5px 20px;
+  
+}
+.section__article {
+}
+.section__article--header {
+  color: #414066;
+}
+.section__article--paragraph {
+  display: inline;
+  color: #414066;
+  margin: 5px;
+}
+.section__articlePrivate {
+ grid-area: section__articlePrivate;
+}
+.section__articlePrivate--header {
+  color: #414066;
+}
+.section__articlePrivate--paragraph {
+  display: inline;
+  color: #414066;
+  margin: 5px;
+}
+.section__articleProfessional {
+  grid-area: section__articleProfessional;
+}
+.section__articleProfessional--header {
+  color: #414066;
+}
+.section__articleProfessional--paragraph {
+  display: inline;
+  color: #414066;
+  margin: 5px;
+}
+
+.top-link {
+  margin: 50px;
+  color: #bc8da7;
+  display: block;
+}
+.motto {
+  color: #c20114;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: auto;
+  border: #0f8b8d dotted 2px;
+  border-radius: 6px;
+}
+.footer {
+  margin: 20px;
+  background: #bc8da7;
+  padding: 10px;
+  border: #414066 1px solid;
+  border-radius: 5px;
+}

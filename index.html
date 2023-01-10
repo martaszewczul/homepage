@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html class="html" lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body class="body">
@@ -24,37 +25,49 @@
       <header id="top">
         <h1>Marta Szewczul - strona domowa</h1>
       </header>
-      <section class="section">
+      <section class="grid">
         <h2 class="section__header">O mnie</h2>
-        <img
-          class="section__picture"
-          src="zdjęcie-marta-szewczul.jpg"
-          alt="zdjęcie Marta Szewczul"
-        />
-        <article class="section__article">
-          <h3 class="section__article section__article--header">Prywatnie</h3>
-          <p class="section__article section__article--paragraph">
+        <div class="div">
+          <img
+            class="section__picture"
+            src="zdjęcie-marta-szewczul.jpg"
+            alt="zdjęcie Marta Szewczul"
+          />
+        </div>
+        <article class="section__articlePrivate">
+          <h3 class="section__articlePrivate section__articlePrivate--header">
+            Prywatnie
+          </h3>
+          <p class="section__articlePrivate section__articlePrivate--paragraph">
             Nazywam się <b>Marta Szewczul</b>. Jestem szczęśliwą żoną
             <b>Piotra</b> i mamą trójki dzieci:
             <b> Stasia, Antosia i Marysi.</b>
           </p>
 
-          <p class="section__article section__article--paragraph">
+          <p  class="section__articlePrivate section__articlePrivate--paragraph">
             Bardzo lubię szyć na maszynie, robić na drutach i szydełkować.
             Ostatnio całowicie pochłonąło mnie planowanie i zakładanie naszego
             ogrodu.
           </p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article section__article--header">Zawodowo</h3>
-          <p class="section__article section__article--paragraph">
+        <article class="section__articleProfessional">
+          <h3
+            class="section__articleProfessional section__articleProfessional--header"
+          >
+            Zawodowo
+          </h3>
+          <p
+            class="section__articleProfessional section__articleProfessional--paragraph"
+          >
             Posiadam wyższe wykształcenie na kierunkach
             <em> Stosunki Międzynarodowe </em>(licencjant),
             <em>Administracja Publiczna </em>(magisterskie) oraz
             <em>Budownictwo</em> (inżynierskie). Znam język angielski w stopniu
             średniozaawansowanym oraz język francuski w stopniu podstawowym.
           </p>
-          <p class="section__article section__article--paragraph">
+          <p
+            class="section__articleProfessional section__articleProfessional--paragraph"
+          >
             Moja dotychczasowa praca zawodowa jako kontroler projektów unijnych
             stała się nie do zniesienia z powodu niskich zarobków, braku
             mozliwości rozwoju, fatalnej atmosfery w pracy orazbardzo słabych
