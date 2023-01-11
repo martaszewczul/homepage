@@ -22,24 +22,31 @@ html {
   background-size: cover;
 }
 .header {
+  background: #c2a4b4;
+  min-height: 60px; 
+  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  min-width: 100%;
 }
 .navigation {
-  background: #c2a4b4;
   padding: 16px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 .navigation__link {
   color: #414066;
-  margin-right: 10px;
+  margin: 0 0 16px;
   padding: 3px;
-  border: #414066 solid 1px;
-  border-radius: 3px;
+  display: block;
+  text-decoration: none;
 }
-.navigation__link--homepage {
-  color: white;
+.navigation--open{
+  display: block;
+}
+.hamburger{
+  position: absolute;
+  top: 18px;
+  right: 16px;
 }
 h1 {
   color: #c20114;
@@ -48,7 +55,7 @@ h1 {
   max-width: 1000px;
   min-height: 100%;
   padding: 10px;
-  margin: auto;
+  margin: 60px auto 0;
   box-sizing: border-box;
 }
 
@@ -62,7 +69,7 @@ h1 {
   border-radius: 5px;
   grid-area: section__header;
 }
-.div{
+.div {
   grid-area: section__picture;
   display: flex;
   justify-content: center;
@@ -75,7 +82,6 @@ h1 {
   border: #c20114 dotted;
   border-radius: 50%;
   margin: 5px 20px;
-  
 }
 .section__article {
 }
@@ -88,7 +94,7 @@ h1 {
   margin: 5px;
 }
 .section__articlePrivate {
- grid-area: section__articlePrivate;
+  grid-area: section__articlePrivate;
 }
 .section__articlePrivate--header {
   color: #414066;
@@ -131,7 +137,10 @@ h1 {
   border: #414066 1px solid;
   border-radius: 5px;
 }
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
   .grid {
     display: grid;
     grid-template-columns: 270px 1fr;
@@ -141,8 +150,26 @@ h1 {
       "section__picture section__articlePrivate"
       "section__picture section__articleProfessional";
   }
- }
- @media screen and (min-width: 1024px) {
+  .navigation {
+    background: #c2a4b4;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation__link {
+    color: #414066;
+    margin-right: 10px;
+    padding: 3px;
+    border: #414066 solid 1px;
+    border-radius: 3px;
+  }
+  .navigation__link--homepage {
+    color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
   .grid {
     display: grid;
     grid-template-columns: 270px 1fr;
@@ -152,8 +179,9 @@ h1 {
       "section__picture section__articlePrivate"
       "section__picture section__articleProfessional";
   }
-  
- @media screen and (min-width: 2500px) {
+}
+
+@media screen and (min-width: 2500px) {
   .grid {
     display: grid;
     grid-template-columns: 1200px 1fr;
@@ -167,13 +195,13 @@ h1 {
     min-width: 2000px;
   }
   .main {
-    max-width: 3000px ;
+   min-width: 100%;
     min-height: 100vh;
-    font-size: 3em;
+    font-size: 2vw;
     text-size-adjust: auto;
-   
-    margin: auto;
-    }
-    .section__picture {
-      max-width: 1000px;}
-    }
+    margin: 100px;
+  }
+  .section__picture {
+    max-width: 1000px;
+  }
+}
