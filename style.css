@@ -69,6 +69,15 @@ h1 {
   border-radius: 5px;
   grid-area: section__header;
 }
+.section__header::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #c20114;
+  border-radius: 50%;
+  margin: 4px;
+}
 .div {
   grid-area: section__picture;
   display: flex;
@@ -88,6 +97,7 @@ h1 {
 .section__article--header {
   color: #414066;
 }
+
 .section__article--paragraph {
   display: inline;
   color: #414066;
