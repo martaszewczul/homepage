@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="html" lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <button class="hamburger hamburger--js">Menu</button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="notatki.html">Notatki</a>
+        <a class="navigation__link" href="umiem-nie-umiem.html"
+          >Umiem nie umiem</a
+        >
+      </nav>
+    </header>
+    <main class="main">
+      <header id="top">
+        <h1>Marta Szewczul - strona domowa</h1>
+      </header>
+      <section class="grid">
+        <h2 class="section__header">O mnie</h2>
+        <div class="div">
+          <img
+            class="section__picture"
+            src="zdjęcie-marta-szewczul.jpg"
+            alt="zdjęcie Marta Szewczul"
+          />
+        </div>
+        <article class="section__articlePrivate">
+          <h3 class="section__articlePrivate section__articlePrivate--header">
+            Prywatnie
+          </h3>
+          <p class="section__articlePrivate section__articlePrivate--paragraph">
+            Nazywam się <b>Marta Szewczul</b>. Jestem szczęśliwą żoną
+            <b>Piotra</b> i mamą trójki dzieci:
+            <b> Stasia, Antosia i Marysi.</b>
+          </p>
+
+          <p class="section__articlePrivate section__articlePrivate--paragraph">
+            Bardzo lubię szyć na maszynie, robić na drutach i szydełkować.
+            Ostatnio całowicie pochłonąło mnie planowanie i zakładanie naszego
+            ogrodu.
+          </p>
+        </article>
+        <article class="section__articleProfessional">
+          <h3
+            class="section__articleProfessional section__articleProfessional--header"
+          >
+            Zawodowo
+          </h3>
+          <p
+            class="section__articleProfessional section__articleProfessional--paragraph"
+          >
+            Posiadam wyższe wykształcenie na kierunkach
+            <em> Stosunki Międzynarodowe </em>(licencjant),
+            <em>Administracja Publiczna </em>(magisterskie) oraz
+            <em>Budownictwo</em> (inżynierskie). Znam język angielski w stopniu
+            średniozaawansowanym oraz język francuski w stopniu podstawowym.
+          </p>
+          <p
+            class="section__articleProfessional section__articleProfessional--paragraph"
+          >
+            Moja dotychczasowa praca zawodowa jako kontroler projektów unijnych
+            stała się nie do zniesienia z powodu niskich zarobków, braku
+            mozliwości rozwoju, fatalnej atmosfery w pracy orazbardzo słabych
+            przełożonych. W związku z tym postanowiłam się przekwalifikować i
+            zostać <strong>programistą frontend</strong>.
+          </p>
+        </article>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Po co ta strona?</h2>
+        <p class="section__article section__article--paragraph">
+          Niniejsza strona powstaje w celu nauki podstw programowania w
+          <strong>HTML, CSS i JAVASCRIPT</strong>. Będę na niej odrabiała prace
+          domowe z
+          <a
+            class="external-link"
+            href="https://edu.devstyle.pl/"
+            target="_blank"
+            >kursu WTF-Co ten frontend</a
+          >
+          i ćwiczyła to czego się nauczę.
+        </p>
+      </section>
+      <div class="motto motto--js"></div>
+
+      <a class="top-link" href="#top">przejdź do góry strony</a>
+    </main>
+    <footer class="footer">strona domowa Marta Szewczul 2022</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
